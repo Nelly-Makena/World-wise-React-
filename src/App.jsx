@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Product from "./pages/product";
-import Pricing from "./pages/pricing";
-import NotFound from "./pages/NotFound";
+import Product from "./pages/Product";
+import Pricing from "./pages/Pricing";
+import NotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="pricing" element={<Pricing />} />
         <Route path="*" element={<NotFound />} />
         <Route path="AppLayout" element={<AppLayout />} />
+        <Route path="Login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
